@@ -473,4 +473,13 @@ ul :hover{
     ul{
         padding:0;
     }
+
+    .see-more{
+        background-color: #74c39e;
+        color: #ffffff;
+        padding: 10px 25px;
+        border: none;
+        margin-left: 35%;
+        margin-bottom: 60px;
+    }
 }
