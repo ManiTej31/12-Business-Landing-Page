@@ -1,5 +1,5 @@
 body{
-    margin: 0;  
+    margin: 0 ;  
     padding: 0;
     font-family: sans-serif;
 }
@@ -16,18 +16,21 @@ body{
 
 nav{
     display: flex;
+    justify-content:space-between;
+    margin-left:20px;
+    margin-right:20px;
 }
 
 .logo{
     height: 30px;
     padding-top: 5px;
-    padding-left: 30px;
+    /* padding-left: 30px; */
 }
 
 .nav-list{
    list-style-type: none;
    display: flex;
-   margin-left: 500px;
+   /* margin-left: 500px; */
 }
 
 .nav-list-items{
@@ -35,7 +38,7 @@ nav{
 }
 
 .nav-btn{
-    margin-left: 80px;
+    /* margin-left: 80px; */
     padding: 3px 15px;
     background-color: #636C79;
     border: 1px solid white;
@@ -248,8 +251,7 @@ hr{
     margin: Auto;
     border: 1px solid rgb(50, 49, 49);
     align-items: center;
-    width: 1100px;
-    
+    width: 1100px;    
 }
 
 svg{
@@ -259,8 +261,7 @@ svg{
 .footer-bottom-lists{
     display: flex;
     justify-content: space-between;
-    margin: 30px 50px;
-    
+    margin: 30px 50px;    
 }
 
 ul{
@@ -279,4 +280,197 @@ ul{
 ul :hover{
     color: white;
     cursor: pointer;
+}
+
+.bars{
+    display:none;
+}
+
+/* responsive */
+
+@media screen and (max-width: 670px){
+    .bars{
+        display:inline;
+    }
+
+    .ham{
+        width:30px;
+        margin-top:15px;
+    }
+
+    .nav-list{
+        display:none;
+    }
+
+    .top-img-container{
+        flex-direction:column;
+    }
+
+    .topimg{
+        margin: auto;
+        height: 250px;
+        width: 320px;
+        object-fit: scale-down;
+    }
+
+    .top-text{
+        padding-left:0px;
+    }
+
+    .top-text{
+        padding-left: 30px;
+    }
+
+    .top-h1{
+        font-size: 30px;
+        line-height: 1;
+        text-align: left;        
+    }
+
+    input{
+        padding: 15px 20px;
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+
+    .stats{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .stat {
+        margin-right: 0;
+    }
+
+    .target-div{
+        text-align: center;
+        margin: 60px 0px;
+    }
+
+    .target-div-img{
+        height: 300px;
+        width: 300px;
+    }
+
+    .mid-main-div{
+        margin-left:0;
+    }
+
+    .mid-main-1{
+        flex-direction: column;
+    }
+
+    .mid-main-2{
+        flex-direction: column;
+    }
+
+    .mid-main-3{
+        flex-direction: column;
+    }
+
+    .mid-main-1{
+        margin-left:0;
+        flex-direction:column-reverse;
+        align-items: center;
+    }
+
+    .mid-main-1-content{
+        margin-right: 0px;
+        margin: 0 30px;
+        align-items:center;
+    }
+
+    .mid-img-1{
+        height: 300px;
+        width: 300px;   
+        object-fit: scale-down;
+    }
+
+    .mid-main-2{
+        margin-left:0;
+        flex-direction:column;
+        align-items: center;
+    }
+
+    .mid-main-2-content{
+        margin-right: 0px;
+        margin: 0 30px;
+        align-items:center;
+    }
+
+    .mid-img-2{
+        height: 300px;
+        width: 300px;   
+        object-fit: scale-down;
+    }
+
+    .mid-main-3{
+        margin-left:0;
+        flex-direction:column-reverse;
+        align-items: center;
+    }
+
+    .mid-main-3-content{
+        margin-right: 0px;
+        margin: 0 30px;
+        align-items:center;
+    }
+
+    .mid-img-3{
+        height: 300px;
+        width: 300px;   
+        object-fit: scale-down;
+    }
+
+    .teams-content{
+        flex-direction:column;
+        margin: 0 50px;
+    }
+
+    .team-members{
+        flex-direction:column;
+        text-align:center;
+        margin: 20px 0px;
+    }
+
+    .team-mate{
+        margin-bottom:30px;
+    }
+
+    .see-more{
+        padding: 10px 25px;        
+        margin-left: 0px;
+        margin-bottom: 60px;
+    }
+
+    .footer-top{ 
+        flex-direction:column;
+        margin: 20px 70px;
+    }
+
+    .logo{
+        margin-bottom:20px;
+    }
+
+    .footer-bottom-lists{
+        flex-direction: column;
+        margin: 30px 0; 
+        text-align:center; 
+        justify-content: center;      
+    }
+
+    hr{
+        width: auto;    
+    }
+
+    footer{
+        background-color: #10181D;
+        padding: 20px 0px;
+    }
+
+    ul{
+        padding:0;
+    }
 }
