@@ -6,7 +6,7 @@ Business Landing Page developed using HTML and Css
 
 ## Web design
 
-![Web Design](./images/12.png)
+![Web Design](./images/12.PNG)
 
 
 
